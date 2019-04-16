@@ -178,15 +178,19 @@
           }
         },
         {
-          "id": "b97a8c6c-1def-4927-bd10-7fa55a526b16",
-          "type": "3f0c8e8de5de694092aa8facf36a8590afdac018",
+          "id": "1ceeac5e-6ade-436d-ad9f-1fa37509955b",
+          "type": "basic.info",
+          "data": {
+            "info": "# NES Pinout\n<style type=\"text/css\">\n#wrap {\n   width:600px;\n   margin:0 auto;\n}\n#left_col {\n   float:left;\n   width:300px;\n}\n#right_col {\n   float:right;\n   width:300px;\n}\n</style>\n\n<div id=\"wrap\">\n    <div id=\"left_col\">\n      <ul>\n        <li>+5V = +5V</li>\n        <li>GND = GND</li>\n        <li>CLK = clk_nes</li>\n        <li>STRB = str_nes</li>\n        <li>D0 = data_nes</li>\n      </ul>\n    D3 and D4 are **Not used**      \n    </div>\n    <div id=\"right_col\">\n        ![alt text](https://github.com/jcarolinares/NES-Controller-FPGA-Driver/blob/master/aux/nes_controller_pinout.png?raw=true \"NES Pinout\") \n    </div>\n</div>\n\n",
+            "readonly": true
+          },
           "position": {
-            "x": 536,
-            "y": 320
+            "x": 424,
+            "y": 440
           },
           "size": {
-            "width": 96,
-            "height": 64
+            "width": 520,
+            "height": 208
           }
         }
       ],
@@ -541,21 +545,6 @@
               }
             }
           ]
-        }
-      }
-    },
-    "3f0c8e8de5de694092aa8facf36a8590afdac018": {
-      "package": {
-        "name": "nes_pinout",
-        "version": "1.0",
-        "description": "Connection pinout Sticker",
-        "author": "Julián Caro Linares",
-        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20width=%22187%22%20height=%22128%22%20viewBox=%220%200%20187%20128%22%3E%3Cimage%20width=%22187%22%20height=%22128%22%20preserveAspectRatio=%22none%22%20xlink:href=%22data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAACACAIAAADcT49TAAAQJElEQVR42u1drZqruhpOzz6mMiNH%20UjmSkSPpJYBckl5CkFuC3BIuodjtwG4HlzCxy4Hdrke8z+TJ4a9JSsvvK9Yz7SoBwkvy/X+H2+1G%20duxQxn+mvoAdC8POmB162BmzQw87Y3bo4b9TX8DTwTknhFBK67p+/A/Lsqa+oYmxcsZEUVSW5biP%20OQzDqW9rSqycMYSQMAxHZExd10EQbJk065djsJuMBUqp7/tBEEx9W5Nh/YwZHVixxiXigrAzxgRh%20GEZRBJl6a9gZY4gwDNM03SBpdsaYw/f9DZJmZ4w5KKWMsa2RZv2MoZQ+dXzf95Mk2Y4gvH7GPPtZ%20Ukpt287zfOobfRHWb8EbRp7nSZKIj5TSOI51B3FdN03TNE1d1536hp6O7TImTVM4EK7Xq/iyrmvP%208xzHsW3btm310bZDmvXvSp2IoogQwhjzfV/+nlJ6vV6xy+jKs+BKmqZT39xzsUXGRFHkOI7run1C%20sW3bUILKstQaeQuk0WNM/YPGN/JH8QfnvPG/k6BBiyRJsOncPdD3/X2laUODMXmev/3A8zxCSF3X%20+Cg0hc/PzyiK8MvT6fT29oZvJrxDmbJlWdZ1rSigwNxi4HR0HEd3cVoQVBlTlqXnea7rFkURx3Ga%20poIHlNLGK4XXOsuyoigw6dOSRiBJkobgchcQabUOgX87iqLJ19en4KYGTLT4eL1er9drVVWEEOga%20RVHcbjfLssIwLIqCEFJVFX7suq5lWd/f34rnGhG4GPydZVkcx7ojVFXFGDM49ff3t9mBM4fqGpOm%20qQgjKstSVj4tyxoOGYnjmHM+rik9TdMgCMqyhLSkckie5waqL+I1DVYLy7LMNrWZQ8Mek+c5Y4wQ%208vn5SQhxXRfGrrquGWPn87nP7onvxaSXZTmKYMg5x5VAknVd966AUtf1s50GMkT41Zpi9lQZE8ex%2053lYXYqiuFwuYuoppZZl2bbdyYO6rqGeiPcba1Ij6FrrI4YViozv+7Zt94VmvpIibWCluVwuBqbk%20eUKVMXiPYQ/lnIM6+C88wjAMT6eTfAgWZM55nudZlonvKaV4ijLndD/CXAuBaRiTi594ozjn68hD%20UJVjKKVFUeDOHcdhjOH+HcfBH5ZlxXEsPoJYnHPbtquqchxn3OvGNqR1CC5e90SjbGSMsSRJVhIU%20MbXo/VzIutLtdnNdV3cEWBNGuRjG2CQK47jYlpcA77rWIVEU6Zpw+oBAz6Ub97bFGGxM6pLN6L5o%20xpiB52FWWD9jZCmEUqqeBgDVb/TohaUbadbPmPaKgr1peKVJkoRS+qRgFwR6Tj0xhlg/Y9rASgNv%20V9vqmCTJ5XKxLGt0/U4AGuVCSXO4rbqqGUJh+mzBsBU1SAN74Avsfnme13W9uJi97UZtkh/r81iq%20kMHZkyRZHGO2uCvteATrX2OG9xfOuewOg8NL9xRlWcpbm9kgS8H6GdOpE8GRmaapZVliX6CUBkFQ%2017WiKFPXdZqmeZ7bti2LyRgEjpThQZZIrPUzpg3OeZIktm3LeScAPMxJkiC0Y+CJImbDcZy+QRCD%20NxznMLmX1ARTuymei4Zf6aYTU8cYE2GEDXx/f4dheHcEnGtgkCUG6W1L8uWcR1GkGN/EGOuM1cXq%20guCyYYiA36nve1Ro8asoiizLsiwT7438t3h15Ncah0z1Qjzou66qyvf9xpcGDvD2IDflheoZ+P7+%20Rtw+Hl9RFPJDbHxsQIMxchSZ4zi32w2R4Y1lnzFm27Z8SOd8vQZhGIoAA0Sz644Qx7HM+MZH9cto%20zNLtdkOixSTTIhuBIIfJN4W4wb5jNbJPLpcLBsqyDB/xX33iG8ztjLFpAxbl+GIDw79t27LbMs9z%20g0E6g7lELOLrQSl1HKeqqqqqEK+NBDRCCHwXAxu3KmPgbsVAjuNkWSZMpZ23nabp5XLxfX8mQdGi%20DrTugXKAhByrqgXbtjvDYl6mKwVBICxG8I2UZRkEQXtC7l6SqnZdlqW8VGDi+kZHOhwWt9HvXJxd%20y75uHHwpYtExiFmsrmLAKKxEmEDOOfb3UeYtTVOsK4QQzjlq3iC8Cy8/3nA4aIejpzXsMeoJhYj5%209TzP87z26RslW3QBfYcQ4jgOSjGMMqcqeOqSkCQJ7IGEEKRGGCtZchWcIAgQcA1+wDh5vV4tyyrL%208vPzU96sRcLGwOCqjLler8hIQsj3+Xy2bVvkK7Wv2HGcoijO5/PpdMqyTH41HccxDiSAq9m27bqu%204zheos20MVHib9/3HcfBTmFZFsItxrpBeRz4zMXLj8d3vV7f3t6SJBEx/31QZQwM4Z7n4WnJ1kx5%20O5TfeMuysiw7nU6dK43xnfu+r7U1NJJXHjz7iAGX7VRLUf4IFQVGOQse0+l0cl0XQkIURUEQYMkR%20by8mNk3Tu9vIH3/++afKiY/H469fv+q6Ph6P7+/vf/3118fHx/F4/P379/v7O/2B4zjH45FS+vX1%20hev49esX5/z379+jbMk4l/rv//nnn/f3dxz1999/33X0tAGJFbeDncIgPiFN06+vrwbR//33X845%20Rm7fpmVZx+Px8RkT5xJJgF9fXx8fH3Vdf3x8XK9XcZb39/fj8Xj37vT8Sm3Fp605NzYdyDRj3fnr%200XjXzdaqPrn7ZbpSQwVxXbfNDMVCbhvyEkAR0D2qIe/HcXw+n3UHMbPizBMbYgzRD8mOoqhtIEDt%20KvVBgiBY9CrbwLYYoxWS3Rcj7LouImMUBxkouLdEXW/9jGk8FZBmuDQ8AmgGQspFsbsBQYRzHgTB%20QI2SORQJNMD6I6raT8VxHGFFbGT8I58eJtFhMRDVzoQtURZTRIzEsCFgQr/SI1g/YzqBZ4yyJsIJ%20R37MaIr2HmgccNPIg0CjVBlkX2MWBphWH8z/mDaF5fVYvxyzY1zsjJkSS5Rj1s+Y2T6VhepK62fM%20bJ/KristElCXxEezAIPGIOqi9GzZPID1rzF9gF4Nq4xgSRAEnuephzRAr24YkS+Xy/l8XiIbVNC9%20xshWcOiNbfsmAmXkyRVWL/nHTy3EYgaYdDvj97A8wGE5nBOJUMDOxEoMgiI0o8etTo++7ASxyyI9%20B5ElIjoJATgiGEcAeS4wXokvDXI+xkJn2sdAnqLAcOrkcLKjwHDW44T5So+ggzEwWSKBBZWbRXlS%20fBS/RGFfcf+EECQHIc4U3+OFm+r25Hylm2biah9ptAYZ+PGE+UqPoEOOwcKAPhGoyy1EufbejKjj%20uq4boSeiI1dZliNqBAYaqfz7zuiFPqC/kkjLMhtkoM3HenQlCC5JkqBPRBzHwifXvkO008TfYRiK%20/SgIAjFNI4b7o+IhLkO3TAtCyrUOQZC2nKaEeg5ag2BOOqvML1E67mBMXddoPIEmFGhagWWmfYeI%20N6aUXi4XxIJYloXqKRCGzufz5XKRFc7Hs0+gyuZ5rpV9Inq3aAHJaTJjDF4ADLKOvgQdjEmSBGlO%20yB+Q6xu03y0EBhBC4jgWnSxENxRMViP46JHsE0QjgH9aj9/4bZa7nxt3o+hrDLNEdDCGMYbcJ6wW%20chTx3Xm/XC5ZlkGsQexIXdcj7kq4EjMjm5ncIDpyUUqNs2ixtXUOPtbM3EUURWJp930fuwFmBpHL%20juOoRJd222Mgu2Cy5FfZtm05nUCOGEKRXHzEbzDL49ZRNnvkY519XLzYrySCvCilSZIkSYI3+Xw+%20I+QDcudd0nQzBmpC+/uGSUqmgnzIrIJFRnwqcg72KKO9mM3iGfm+fzgc0HUBRkgk76Vpepcx2/US%20GGD0JWG4kMpTG16geJZt21mWcc7h61ARDbfiiYTsaVDhATqOMH+jhbPu2VV6qOAVh57BGEPTbNi0%20DJaiu7qFLMKL/VHlRFthDGA2+6/ZO+ofkJ+1p/2vyqUq3mMQBL7vl2WZJAma73mehy/vHDm10fm5%20eLyHW/uQUQa5DfqV4jhGM/oRpwJFG1DaDUbIoiiKooB9BFKwyq2tnzGyX+l6vWpVseusehfHsdaz%207PSG3l7uV5JlFMaYuCRRdgO1De9i/YxpPK04jhV96QNFEvtIoPXLhfquN6crYZ9G1Z2BnyVJMhDZ%20g+Z9dzs+DvfqIavxK60eruuijrwoBSX+C/pUWZau6w6rG6gPjc4GjQRKMQhKiE19uyNji4whhPi+%20j4cKU4T4Hhatgdx6GYwxDJLnuVyzDnbVWZkxR8RGGUN+ivWRxyzUGGRuYalPxfrlmNn6lRaK9TNm%20ztLlEtm8fsbMGXNmcx92xuzQw3YlX6CRcmVQvlUeBD6d9WnUMrbLGKSoIcBU7jyA4taKvIEnT2Rm%20gTGifcgSxZS7WD9jOtt7gCuIFZR/AOoEQXA3nRGRqQhKbJxCDGLb9nysMsgTwt/tnApUKVfKtZja%20TfFc9OVEyu7JThRFMez0UcmJHB7kxX6ldvStfJ0gioqzbFuSLxaGu80ayE9Fxc7uIyiiqbLpiGSM%20vot5sa4keushqlekN3x+fqpXHN4WY6IoUs+Lg8upnc6o3jWI/JCmMz9rwpxIpJiByojdHG6YJcOc%20MUmSHH6ARjr4vizLt7e3w+FwOp1mZW9APq9WwhHmUVamzAbp62Uy4fxcr1dcFfqdqHeIMWcMRkeM%20kmVZ5/MZKa6e51FKkbWEPNyZQKUVTBuu68o15bWSrgVQQXjqCfg/YO1EzEaapnDHqvRtMNeVoEki%204BlhzIgf4JxXVYX8VoOmD6MDzDZ+m+WeSsY5kZZlzYoxZVmWZYlObniLMD8qd2fOmMYKxhgTcfZy%20cLJxg8ZOQO/VyozEXBjnRMJa82BOpG3bnfJvX2PPJEnKshyxTyQg0h8553C5y/0BD4eDyhr80BrT%2091GeiPakgOB4Brr/UkrRA5MQApXnlQaPcTPcGrpSnudpmkJGRjwXtgyziWpPi+M4IsUkDMMGF9EH%208KXZJ6KwAyGEc46aZ6RrjXmkxAHs8XjvXx+VMq6g2ljz0FgbX8JZYeay6MNwHI+82AzjIcbAeEp+%20wmbx0luW5Xkeyux0llp5xPMCXmq1K5qzqb6xMItq9aJv7BwLiBjbELMsQ+tBGNSFFbWqKjSDcF33%20rlX02ZBtvipW2jZky2xVVb7vm81VO4FBqzrafGC+xqA/cft7qNZTvwjdMBDDsVOIWzPbmGZll3oQ%20G7L5Ivpf96hGynQcx+3KeLqDLBobYgzkp7tJRjLQEbSh+sHmpD6ImeVwttgQY8hPU1BF0uR5Liqo%20yWCMobiayiDw9vUpKXOWyvuwLcYQ5XRG0KVvbQjDUIU0CLbq248W2vtk/RFVbYh0Ruw4sqovnHOO%204wxvJWEYotYLHL+yGgyHAFzcwyaQJa4x62dM51NBOiPSXSEOQw/Cs1cMuGSMoVSsvN4ICqrUi9zX%20mDmi76mMkug6SqfJZWFzcsyOB7EzZkosUY7ZGTMZFqor7YyZDAvVldbPmDk/lX2NmSOW+FTmjPUz%20Zse42BkzJea8Y/Zh5RY8kcc1Q6AT0dRXoY3D7Xab+hp2LAn7rrRDDztjduhhZ8wOPeyM2aGHnTE7%209LAzZoce/gdMjyXSrrmsvwAAABJ0RVh0RVhJRjpPcmllbnRhdGlvbgAxhFjs7wAAAABJRU5ErkJg%20gg==%22/%3E%3C/svg%3E"
-      },
-      "design": {
-        "graph": {
-          "blocks": [],
-          "wires": []
         }
       }
     }
